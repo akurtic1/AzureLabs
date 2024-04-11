@@ -44,21 +44,21 @@ I used Azure Portal to do this task.
 
 **IP Adresses** tab
 
-        |  **Option**         | **Value**            |
-	| ------------------ | --------------------  |
+        |  **Option**         | **Value**           |
+	| ------------------ | -------------------- |
 
-	| IPv4 address space | `10.20.0.0/16`     |
+	| IPv4 address space | `10.20.0.0/16`       |
 
 **Adding a subnet**
 
         | **Subnet**             | **Option**           | **Value**              |
 	| ---------------------- | -------------------- | ---------------------- |
-	| SharedServicesSubnet   | Subnet name          | `SharedServicesSubnet`   |
-	|                        | Starting address		| `10.20.10.0`          |
-	|						 | Size					| `/24`	|
-	| DatabaseSubnet         | Subnet name          | `DatabaseSubnet`         |
-	|                        | Starting address		| `10.20.20.0`        |
-	|						 | Size					| `/24`	|
+	| SharedServicesSubnet   | Subnet name          | `SharedServicesSubnet` |
+	|                        | Starting address		| `10.20.10.0`   |
+	|						| Size			| `/24`	|
+	| DatabaseSubnet         | Subnet name          | `DatabaseSubnet`       |
+	|                        | Starting address		| `10.20.20.0`   |
+	|						| Size			| `/24`	|
 
 After creating a VNet and adding a subnet, I went to the resource and checked if everything is deployed successfully.
 
@@ -90,6 +90,7 @@ In this task, I created Application Security Group and a Network Security GRoup.
 that allows traffic from ASG. NSG also have an outbound rule that denis access to the Internet.
 
 Basic Information:
+
     | Setting | Value |
     | -- | -- |
     | Subscription | *your subscription* |
@@ -98,12 +99,14 @@ Basic Information:
     | Region | **East US**  |
 
 Settings after deployment NSG
+
     | Setting | Value |
     | -- | -- |
     | Virtual network | **CoreServicesVnet (az104-rg4)** |
     | Subnet | **SharedServicesSubnet** 
 
 **Configuring an inbound security rule to allow ASG traffic**
+
     | Setting | Value |
     | -- | -- |
     | Source | **Application security group** |
@@ -118,6 +121,7 @@ Settings after deployment NSG
     | Name | `AllowASG` |
 
 **Configuring an outbound NSG rule that denies Internet access**
+
     | Setting | Value |
     | -- | -- |
     | Source | **Any** |
@@ -134,6 +138,7 @@ Settings after deployment NSG
 ### Configure a private DNS zone
 
 **Creating a Private DNS Basics**
+
     | Property | Value    |
     |:---------|:---------|
     | Subscription | **Select your subscription** |
@@ -142,12 +147,14 @@ Settings after deployment NSG
     | Region |**East US** |
 
 **Linking Private Network**
+
     | Property | Value    |
     |:---------|:---------|
     | Link name | `manufacturing-link` |
     | Virtual network | `ManufacturingVnet` |
 
 **Adding record set**
+
     | Property | Value    |
     |:---------|:---------|
     | Name | **sensorvm** |
