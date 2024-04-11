@@ -34,7 +34,7 @@ In this task, I created a manged Disk in the Azure Portal. After disk is deploye
 
 **Properties for creating a Managed Disk:** 
 
-| Setting | Value |
+    | Setting | Value |
     | --- | --- |
     | Subscription | *your subscription* | 
     | Resource Group | `az104-rg3` 
