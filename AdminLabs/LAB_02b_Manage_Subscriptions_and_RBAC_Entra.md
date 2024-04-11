@@ -24,7 +24,7 @@ update existing resources with resource tags
 use resource locks to protect configured resources
 
 ## Architecture diagram
-![Diagram of the lab 02 architecture.](D:/AzureProjects/AdmirLabs/az104-lab01-architecture.png)
+![Diagram of the lab 02 architecture.](../AdminLabs/Media/az104-lab02b-architecture.png)
 
 ## Tasks:
 
@@ -82,7 +82,7 @@ In this task, I tried to create the storage account and I didn't fill the proper
 storage account without using "Tag Name" and "Tag Value", with this we can confirm that the policy is working.
 
 ## Policy Error
-![Diagram of the lab 02 architecture.](D:/AzureProjects/AdmirLabs/az104-lab01-architecture.png)
+![Diagram of the lab 02 architecture.](../AdminLabs/Media/az104-lab02b-policyerror.png)
     
 
 ### Apply tagging via Azure Policy
