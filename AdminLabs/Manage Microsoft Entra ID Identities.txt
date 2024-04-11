@@ -1,0 +1,8 @@
+In this lab, I have created users and assigned groups.
+
+Tasks:
+1. Create and configure user accounts.
+2. Create groups and add members.
+
+Resource used:
+- Microsoft Entra ID
