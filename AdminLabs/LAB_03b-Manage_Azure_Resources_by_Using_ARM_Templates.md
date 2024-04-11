@@ -87,6 +87,7 @@ I used Bicep file and made the changes below:
 + Changed the diskSizeinGiB value to 32.
 
 Deploying a template with: **az deployment group create --resource-group az104-rg3 --template-file azuredeploydisk.bicep**
+
 Confirming if the disk was created: az disk list **--output table**
 
 ## Key takeaways
