@@ -18,7 +18,7 @@ Your team wants to look at ways to automate and simplify resource deployments. Y
 reduce human error and increase consistency. 
 
 ## Architecture diagram
-![Diagram of the lab 03 architecture.](D:/AzureProjects/AdmirLabs/az104-lab01-architecture.png)
+![Diagram of the lab 03 architecture.](../az104-lab03-architecture.png)
 
 ## Tasks:
 
