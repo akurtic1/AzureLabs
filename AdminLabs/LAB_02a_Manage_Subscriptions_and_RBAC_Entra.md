@@ -24,7 +24,7 @@ Create and manage virtual machines
 Create support request tickets (do not include adding Azure providers)
 
 ## Architecture diagram
-![Diagram of the lab 02 architecture.](D:/AzureProjects/AdmirLabs/az104-lab01-architecture.png)
+![Diagram of the lab 02 architecture.](../AdminLabs/Media/az104-lab02a-architecture.png)
 
 ## Tasks:
 
