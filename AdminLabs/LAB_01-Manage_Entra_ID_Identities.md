@@ -14,7 +14,7 @@ In this lab, I have created users and assigned groups using Microsoft Entra ID.
 Your organization is building a new lab environment for pre-production testing of apps and services.  A few engineers are being hired to manage the lab environment, including the virtual machines. To allow the engineers to authenticate by using Microsoft Entra ID, you have been tasked with provisioning users and groups. To minimize administrative overhead, membership of the groups should be updated automatically based on job titles. 
 
 ## Architecture diagram
-![Diagram of the lab 01 architecture.](D:/AzureProjects/AdmirLabs/az104-lab01-architecture.png)
+![Diagram of the lab 01 architecture.](AdminLabs/Media/az104-lab01-architecture.png)
 
 ## Tasks:
 
