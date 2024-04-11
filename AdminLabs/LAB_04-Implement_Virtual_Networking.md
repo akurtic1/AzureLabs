@@ -35,20 +35,20 @@ In this task, I created a VNet and associated subnets to the existing resources.
 I used Azure Portal to do this task.
 
 **Basic tab** for the CoreServiceVnet 
-    |  **Option**        | **Value**            |
+        |  **Option**        | **Value**            |
 	| ------------------ | -------------------- |
 	| Resource Group     | `az104-rg4`          |
 	| Name               | `CoreServicesVnet`   |
 	| Region             | (US) **East US**     | 
 
 **IP Adresses** tab
-    |  **Option**         | **Value**            |
+        |  **Option**         | **Value**            |
 	| ------------------ | --------------------  |
 
 	| IPv4 address space | `10.20.0.0/16`     |
 
 **Adding a subnet**
-    | **Subnet**             | **Option**           | **Value**              |
+        | **Subnet**             | **Option**           | **Value**              |
 	| ---------------------- | -------------------- | ---------------------- |
 	| SharedServicesSubnet   | Subnet name          | `SharedServicesSubnet`   |
 	|                        | Starting address		| `10.20.10.0`          |
