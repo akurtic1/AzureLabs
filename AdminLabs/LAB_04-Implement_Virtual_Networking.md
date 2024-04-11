@@ -36,7 +36,7 @@ I used Azure Portal to do this task.
 
 **Basic tab** for the CoreServiceVnet 
 
-        |  **Option**        | **Value**            |
+|  **Option**        | **Value**            |
 	| ------------------ | -------------------- |
 	| Resource Group     | `az104-rg4`          |
 	| Name               | `CoreServicesVnet`   |
