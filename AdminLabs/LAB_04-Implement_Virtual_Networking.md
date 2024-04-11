@@ -19,7 +19,7 @@ The CoreServicesVnet virtual networkhas the largest number of resources. A large
 The ManufacturingVnet virtual network contains systems for the operations of the manufacturing facilities. The organization is anticipating a large number of internal connected devices for their systems to retrieve data from.. 
 
 ## Architecture diagram
-![Diagram of the lab 04 architecture.](D:/AzureProjects/AdmirLabs/az104-lab01-architecture.png)
+![Diagram of the lab 04 architecture.](../AdminLabs/Media/az104-lab04-architecture.png)
 
 ## Tasks:
 
