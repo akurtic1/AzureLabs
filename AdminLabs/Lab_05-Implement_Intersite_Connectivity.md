@@ -31,7 +31,7 @@ Your organization segments core IT apps and services (such as DNS and security s
 
 In this task, I created a VM and setup the basic information below:
 
-| Setting | Value | 
+    | Setting | Value | 
     | --- | --- |
     | Subscription |  *my subscription* |
     | Resource group |  `az104-rg5` 
@@ -58,6 +58,7 @@ On the **Networking** tab, for Virtual network, I used following properties.
 
 In this task, I created a different Virtual Machine with a different Networking properties.
 Basic properties are the same but the Networking ones are different:
+
     | Setting | Value | 
     | --- | --- |
     | Name | `ManufacturingVNet` |
@@ -69,6 +70,7 @@ Basic properties are the same but the Networking ones are different:
 
 In this task, I used the Network Watcher Resource to check if the created Virtual Machines can communicate with each other.
 In Network Watched I used diagnostic tool, setup the troubleshoot connection and used the following properties:
+
     | Field | Value | 
     | --- | --- |
     | Source type           | **Virtual machine**   |
@@ -84,7 +86,8 @@ In Network Watched I used diagnostic tool, setup the troubleshoot connection and
 ## Configuring virtual network peerings between virtual networks
 In this task, I used Virtual Network Peering to setup a communication between vritual networks.
 Properties below:
-| **Parameter**                                    | **Value**                             |
+
+| **Parameter**                                 | **Value**                             |
 | --------------------------------------------- | ------------------------------------- |
 | **This virtual network**                                       |                                       |
 | Peering link name                             | `CoreServicesVnet-to-ManufacturingVnet` |
@@ -111,7 +114,7 @@ I used the following script: Test-NetConnection <CoreServicesVM private IP addre
 
 
 1. **Assign policy** and specify the **Scope**:
-
+   
     | Setting | Value |
     | --- | --- |
     | Subscription | your Azure subscription |
@@ -120,7 +123,7 @@ I used the following script: Test-NetConnection <CoreServicesVM private IP addre
 1. To specify the **Policy definition**,I selected `Inherit a tag from the resource group if missing`.
 
 1. Configuring the **Basics** properties of the assignment.
-
+   
     | Setting | Value |
     | --- | --- |
     | Assignment name | `Inherit the Cost Center tag and its value 000 from the resource group if missing` |
@@ -144,6 +147,7 @@ I used the following script: Test-NetConnection <CoreServicesVM private IP addre
 
 In this task, I used the new resource "Custom Route", where I wanted to control the network traffic between the perimeter subnet and the internal core services subnet.
 In the text below, you will see the properties that I used for this task.
+
     | Setting | Value | 
     | --- | --- |
     | Subscription | your subscription |
@@ -153,6 +157,7 @@ In the text below, you will see the properties that I used for this task.
     | Propagate gateway routes | **No** |
 
 Creating a route to the CoreServices Virtual Network.
+
     | Setting | Value | 
     | --- | --- |
     | Route name | `PerimetertoCore` |
