@@ -16,7 +16,7 @@ In this lab, I learned how to segment areas and learned how to make communicatio
 Your organization segments core IT apps and services (such as DNS and security services) from other parts of the business, including your manufacturing department. However, in some scenarios, apps and services in the core area need to communicate with apps and services in the manufacturing area. In this lab, you configure connectivity between the segmented areas. This is a common scenario for separating production from development or separating one subsidiary from another.
 
 ## Architecture diagram
-![Diagram of the lab 02 architecture.](../AdminLabs/Media/az104-lab05-architecture.png)
+![Diagram of the lab 05 architecture.](../AdminLabs/Media/az104-lab05-architecture.png)
 
 ## Tasks:
 
@@ -30,7 +30,8 @@ Your organization segments core IT apps and services (such as DNS and security s
 ### Creating a core services virtual machine and virtual network
 
 In this task, I created a VM and setup the basic information below:
-    | Setting | Value | 
+
+| Setting | Value | 
     | --- | --- |
     | Subscription |  *my subscription* |
     | Resource group |  `az104-rg5` 
@@ -45,6 +46,7 @@ In this task, I created a VM and setup the basic information below:
     | Public inbound ports | **None** |
 
 On the **Networking** tab, for Virtual network, I used following properties.
+
     | Setting | Value | 
     | --- | --- |
     | Name | `CoreServicesVNet` (Create new) |
@@ -105,6 +107,7 @@ Properties below:
 
 In this task, I used Azure PowerShell to test the connection.
 I used the following script: Test-NetConnection <CoreServicesVM private IP address> -port 3389
+![Diagram of the lab 05 architecture.](../AdminLabs/Media/az104-lab05-success.png)
 
 
 1. **Assign policy** and specify the **Scope**:
