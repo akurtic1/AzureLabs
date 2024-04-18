@@ -19,12 +19,13 @@ Your organization is currently storing data in on-premises data stores. Most of 
 + Task 2: Create and configure secure blob storage.
 + Task 3: Create and configure secure Azure file storage.
 
-![Data Storage Architecture.](D:/AzureProjects/AdmirLabs/az104-lab01-architecture.png)
+![Data Storage Architecture.](../AdminLabs/Media/az104-lab07-architecture.png)
 
 
 ### Creating and configure a storage account.
 
 In this task, I created a Data Storage account and configured the following Basic properties:
+
     | Setting | Value |
     | --- | --- |
     | Subscription          | my subscription  |
@@ -42,6 +43,7 @@ In this task, I created a blob container and uploaded a random file.
 After creating blob container I assigned a policy.
 
 **Adding Policy**
+
     | Setting | Value |
     | --- | --- |
     | Policy type | **Time-based retention**  |
@@ -52,6 +54,7 @@ I also review the other options in the Blob Storage, such as **Download**, **Del
 ### Configuring limited access to the blob storage
 
 In this task, I used "Generate SAS" and configured the following properties:
+
     | Setting | Value |
     | --- | --- |
     | Signing key | **Key 1** |
