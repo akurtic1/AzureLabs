@@ -31,7 +31,7 @@ Source: https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/
 
 In this task, I used Load Balancer in front of the two Azure VM's in the Virtual Network. I setup the front-end IP Adress, backend pool and rules
 that define how connections should traverse the load balancer.
-![Load Balancer Architecture.](D:/AzureProjects/AdmirLabs/az104-lab01-architecture.png)
+![Load Balancer Architecture.](../AdminLabs/Media/az104-lab06-lb-architecture.png)
 
 
 **Frontend IP configuration:**
@@ -45,6 +45,7 @@ that define how connections should traverse the load balancer.
     | Routing Preference | **Microsoft network** |
 
 **Adding backend pool:**
+
     | Setting | Value |
     | --- | --- |
     | Name | `az104-be` |
@@ -52,6 +53,7 @@ that define how connections should traverse the load balancer.
     | Backend Pool Configuration | **NIC** |
 
 **Adding Load balancing rule:**
+
     | Setting | Value |
     | --- | --- |
     | Name | `az104-lbrule` |
@@ -77,6 +79,7 @@ that define how connections should traverse the load balancer.
 In this task, I implemented an Azure Application Gateaway in front of two VM's. The Application Gateway routes images to one virtual machine and videos to the other virtual machine.
 
 **Configuring the Basic Tab**
+
     | Setting | Value |
     | --- | --- |
     | Subscription | my subscription |
@@ -92,6 +95,7 @@ In this task, I implemented an Azure Application Gateaway in front of two VM's. 
     | Subnet | **subnet-appgw (10.60.3.224/27)** |
 
 **Adding a backend pool - Images:**
+
     | Setting | Value |
     | --- | --- |
     | Name | `az104-imagebe` |
@@ -99,6 +103,7 @@ In this task, I implemented an Azure Application Gateaway in front of two VM's. 
     | Virtual machine | **az104-rg6-nic1 (10.60.1.4)** |
 
 **Adding a backend pool - Video:**
+
     | Setting | Value |
     | --- | --- |
     | Name | `az104-videobe` |
