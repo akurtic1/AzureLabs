@@ -24,9 +24,10 @@ Your organization wants to explore deploying and configuring Azure virtual machi
 
 ### Deploying a Virtual Machine using Azure Portal
 
-![Diagram of the vm architecture tasks.](../media/az104-lab08-vm-architecture.png)
+![Diagram of the vm architecture tasks.](../AdminLabs/Media/az104-lab08-vm-architecture.png)
 
 In this task, I deployed a Virtual Machine using Azure Portal. In the text below, you will see the properties that I configured for a VM:
+
     | Setting | Value |
     | --- | --- |
     | Subscription | subscription |
@@ -50,6 +51,7 @@ I also went trough and configured small details about monitoring, networking, ma
 
 After the resource is creating, I went to "Size" blade and went trough all properties that are available to edit.
 I attached a simple disk:
+
     | Setting | Value |
     | --- | --- |
     | Disk name | `vm1-disk1` |
@@ -60,6 +62,7 @@ I attached a simple disk:
 
 In this task, I deployed Virtual Machine Scale sets using Azure portal, across availability zones.
 I configured the basic properties:
+
     | Setting | Value |
     | --- | --- |
     | Subscription | subscription  |
@@ -82,6 +85,7 @@ After configuring the basic properties, I also configured Networking. I created 
 
 In this task, I used the resource I created in previous task (Virtual Machine Scale Sets) and decided to go with scaling.
 So, I added a custom scale and configured the following properties:
+
     | Setting | Value |
     | --- | --- |
     | Metric source | **Current resource (vmss1)** |
@@ -118,7 +122,6 @@ When a Virtual Machine was deployed, I used a few more scripts for checking if e
     -ResourceGroupName 'az104-rg8' `
     -Status
     ```
-
 ## Key takeaways
 
 + Azure virtual machines are on-demand, scalable computing resources.
