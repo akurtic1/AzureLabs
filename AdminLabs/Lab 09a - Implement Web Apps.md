@@ -47,17 +47,17 @@ in repository field, I used the source provided by Microsoft: https://github.com
 ### Swap deployment slots
 
 In this task, I swaped the Production slot with staging slot that I configured in the previous tasks.
-![Screenshot of this task](../media/az104-lab09a-architecture.png)
+![Screenshot of this task](../AdminLabs/Media/swap.png)
 
 ###  Configuring and testing autoscaling of the Azure web app
 In this task, I configured autoscaling of Azure App, which enables us to mantain optimal performance when web app traffic increases.
 On the settings tab, I used scale out option and configured with Automatic scaling with maximum burst of 2.
 
 After that, I created a new load test to test the URL from our Default Domain.
-![Screenshot of this task](../media/az104-lab09a-architecture.png)
+![Screenshot of this task](../AdminLabs/Media/testingtask4.png)
 
 Engine Health test:
-![Screenshot of this task](../media/az104-lab09a-architecture.png)
+![Screenshot of this task](../AdminLabs/Media/enginehealth.png)
 
 ## Key takeaways
 
