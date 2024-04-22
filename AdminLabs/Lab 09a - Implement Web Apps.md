@@ -27,7 +27,7 @@ Your organization is interested in Azure Web apps for hosting your company websi
 ### Creating and configuring an Azure web app.
 
 In this task, I used Azure Web apps to configure and create an Azure App.
-![Screenshot of this task](../AdminLabs/Media/creating a new web app.png)
+![Screenshot of this task](../AdminLabs/Media/newwebapp.png)
 
 ### Creating and configuring a deployment slot.
 
