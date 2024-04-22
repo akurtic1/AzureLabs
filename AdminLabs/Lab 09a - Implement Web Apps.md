@@ -15,7 +15,6 @@ In this task, I used Azure Web apps to host my companys a website.
 Your organization is interested in Azure Web apps for hosting your company websites. The websites are currently hosted in an on-premises data center. The websites are running on Windows servers using the PHP runtime stack. The hardware is nearing end-of-life and will soon need to be replaced. Your organization wants to avoid new hardware costs by using Azure to host the websites. 
 
 ## Tasks:
-
 + Task 1: Create and configure an Azure web app.
 + Task 2: Create and configure a deployment slot.
 + Task 3: Configure web app deployment settings.
@@ -23,23 +22,22 @@ Your organization is interested in Azure Web apps for hosting your company websi
 + Task 5: Configure and test autoscaling of the Azure web app.
 
 ### Diagram of the Task
-![Diagram of the tasks.](../media/az104-lab09a-architecture.png)
+![Diagram of the tasks.](../AdminLabs/Media/az104-lab09a-architecture.png)
 
 ### Creating and configuring an Azure web app.
 
 In this task, I used Azure Web apps to configure and create an Azure App.
-![Screenshot of this task](../media/az104-lab09a-architecture.png)
-
+![Screenshot of this task](../AdminLabs/Media/creating a new web app.png)
 
 ### Creating and configuring a deployment slot.
 
 After the resource is created, I added a new slot called "staging". In this task, we need to make sure to 
 test our app first then we can switch to production which means that our app is done.
+
     | Setting | Value |
     | --- | ---|
     | Name | `staging` |
     | Clone settings from | **Do not clone settings**|
-
 
 ### Configuring web app deployment settings
 
