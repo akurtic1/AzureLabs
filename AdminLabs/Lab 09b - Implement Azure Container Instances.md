@@ -8,8 +8,7 @@ lab:
 
 ## Lab introduction
 
-In this task, I made a simply web application using Docker image.
-
+In this task, I made a simple web application using Docker image.
 ## Lab scenario
 
 Your organization has a web application that runs on a virtual machine in your on-premises data center. The organization wants to move all applications to the cloud but doesn't want to have a large number of servers to manage. You decide to evaluate Azure Container Instances and Docker.
