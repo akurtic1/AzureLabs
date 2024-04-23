@@ -22,8 +22,8 @@ Your organization has a web application that runs on a virtual machine in your o
 
 ### Diagram of the Lab
 ![Diagram of the lab.](../AdminLabs/Media/az104-lab09b-aca-architecture.png)
-### Creating and configuring an Azure Container App and environment.
 
+### Creating and configuring an Azure Container App and environment.
 In this task, I configured Azure Container App using Azure Portal.
 ![Screenshot of this task](../AdminLabs/Media/appcontainer.png)
 
