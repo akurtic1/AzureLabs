@@ -21,17 +21,17 @@ Your organization has a web application that runs on a virtual machine in your o
 + Task 2: Test and verify deployment of the Azure Container App.
 
 ### Diagram of the Lab
-![Diagram of the lab.](../media/az104-lab09a-architecture.png)
+![Diagram of the lab.](../AdminLabs/Media/az104-lab09b-aca-architecture.png)
 
 ### Creating and configuring an Azure Container App and environment.
 
 In this task, I configured Azure Container App using Azure Portal.
-![Screenshot of this task](../media/az104-lab09a-architecture.png)
+![Screenshot of this task](../AdminLabs/Media/appcontainer.png)
 
 
 ### Testing and verifying deployment of the Azure Container App.
 In this task, I used the applications URL to test if the Container App is working.
-![Screenshot of this task](../media/az104-lab09a-architecture.png)
+![Screenshot of this task](../AdminLabs/Media/testapp.png)
 
 
 ## Key takeaways
