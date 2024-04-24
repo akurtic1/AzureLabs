@@ -15,7 +15,7 @@ activity log for more insights.
 
 Your organization has migrated their infrastructure to Azure. It is important that Administrators are notified of any significant infrastructure changes. You plan to examine the capabilities of Azure Monitor, including Log Analytics.
 
-![Diagram of the architecture lab 11](../media/az104-lab11-architecture.png)
+![Diagram of the architecture lab 11](../AdminLabs/Media/az104-lab11-architecture.png)
 
 ## Tasks:
 
@@ -30,24 +30,24 @@ Your organization has migrated their infrastructure to Azure. It is important th
 ### Using a template to provision an infrastructure.
 In this task, I deployed a custom template that was provide by Microsoft.
 After deployment of a template, I used Azure Monitor to Enable Insights for the Virtual Machine.
-![Screenshot of the Monitor insights](../media/az104-lab11-architecture.png)
+![Screenshot of the Monitor insights](../AdminLabs/Media/task1-configure-monitor.png)
 
 ### Creating an alert
 In this task, I configured an alert using Azure Monitor.
-![Screenshot of the Monitor Alert](../media/az104-lab11-architecture.png)
+![Screenshot of the Monitor Alert](../AdminLabs/Media/task2-creating-alert.png)
 
 ### Configuring action group notifications
 In this task, I configured an Action group and used my email to test if this alert will work.
-![Screenshot of the Action Group](../media/az104-lab11-architecture.png)
+![Screenshot of the Action Group](../AdminLabs/Media/task3-action-group.png)
 
 ### Triggering an alert and confirm it is working.
 In this task, I deleted a VM to test if this alert will work.
 While I was waiting for an email, I checked the logs to see if the VM is deleted.
-![Screenshot of the Monitor Alert](../media/az104-lab11-architecture.png)
+![Screenshot of the Monitor Alert](../AdminLabs/Media/task4-trigger.png)
 
 ### Configuring an alert processing rule
 In this task, I created an alert rule to suppress notifications during a maintenance period.
-![Screenshot of the alert processing rule](../media/az104-lab11-architecture.png)
+![Screenshot of the alert processing rule](../AdminLabs/Media/task5-rules.png)
 
 ### Using Azure Monitor log queries
 In this task, in Azure Monitor I used a few different queries to capture data from the virtual machine.
@@ -60,7 +60,7 @@ Query:
     | summarize avg(Val) by bin(TimeGenerated, 5m), Computer //split up by computer
     | render timechart
    ```
-![Screenshot of Azure Monitor log queries](../media/az104-lab11-architecture.png)
+![Screenshot of Azure Monitor log queries](../AdminLabs/Media/task6-query.png)
 
 
 ## Key takeaways
