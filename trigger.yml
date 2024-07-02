@@ -1,0 +1,23 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  dockerRegistryServiceConnection: '<your-service-connection-id>'
+  imageRepository: 'petshopcontainer.azurecr.io/petstoreapp'
+  containerRegistry: 'petshopcontainer.azurecr.io'
+  dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
+  tag: '$(Build.BuildId)'
+
+steps:
+- task: Docker@2
+  inputs:
+    command: 'buildAndPush'
+    repository: '$(imageRepository)'
+    dockerfile: '$(dockerfilePath)'
+    containerRegistry: '$(dockerRegistryServiceConnection)'
+    tags: |
+      $(tag)
+      latest
