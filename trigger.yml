@@ -5,7 +5,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  dockerRegistryServiceConnection: '<your-service-connection-id>'
+  dockerRegistryServiceConnection: 'petshopepipe'
   imageRepository: 'petshopcontainer.azurecr.io/petstoreapp'
   containerRegistry: 'petshopcontainer.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
